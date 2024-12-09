@@ -110,6 +110,8 @@ export default function Product() {
               src={product.image}
               alt={product.name}
               className="w-full h-44 object-contain rounded-md"
+              height={44}
+              width={100}
             />
 
             {/* Product Name */}

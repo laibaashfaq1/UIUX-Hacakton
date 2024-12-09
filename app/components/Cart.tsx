@@ -42,6 +42,8 @@ const Cart = () => {
                   src="/chair.png"
                   alt="Asgaard sofa"
                   className="h-[100px] w-[100px] object-cover rounded-md"
+                  width={100}
+                  height={100}
                 />
               </div>
               <h3 className="text-[#9F9F9F] text-[16px] font-medium ml-4">

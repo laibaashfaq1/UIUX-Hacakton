@@ -1,16 +1,16 @@
 
 import Cart from "./components/Cart";
-// import Hero from "./components/Hero";
-// import Shop from "./components/Shop";
+  import Hero from "./components/Hero";
+ import Shop from "./components/Shop";
 
 
 
 export default function Home() {
   return (
     <div>
-      {/* <Hero/>  */}
+      <Hero/> 
       {/* <Shop/> */}
-      <Cart/>
+      {/* <Cart/> */}
     </div>
   );
 }
