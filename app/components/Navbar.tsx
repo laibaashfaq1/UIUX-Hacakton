@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Image from "next/image";
 import Link from "next/link"; // Import Link
@@ -27,26 +27,28 @@ const Navbar = () => {
 
         {/* Navigation Links (hidden on smaller screens) */}
         <nav className="hidden md:flex space-x-8">
-          <li className="menulink">
-            <Link href="#hero" className="text-gray-600 hover:text-black">
-              Home
-            </Link>
-          </li>
-          <li className="menulink">
-            <Link href="#shop" className="text-gray-600 hover:text-black">
-              Shop
-            </Link>
-          </li>
-          <li className="menulink">
-            <Link href="/blog" className="text-gray-600 hover:text-black">
-              Blog
-            </Link>
-          </li>
-          <li className="menulink">
-            <Link href="/contact" className="text-gray-600 hover:text-black">
-              Contact
-            </Link>
-          </li>
+          <ul className="flex space-x-8">
+            <li className="menulink">
+              <Link href="/Hero" className="text-gray-600 hover:text-black">
+                Home
+              </Link>
+            </li>
+            <li className="menulink">
+              <Link href="/Shop" className="text-gray-600 hover:text-black">
+                Shop
+              </Link>
+            </li>
+            <li className="menulink">
+              <Link href="/blog" className="text-gray-600 hover:text-black">
+                Blog
+              </Link>
+            </li>
+            <li className="menulink">
+              <Link href="/contact" className="text-gray-600 hover:text-black">
+                Contact
+              </Link>
+            </li>
+          </ul>
         </nav>
 
         {/* Hamburger Menu (visible on smaller screens) */}
@@ -62,7 +64,11 @@ const Navbar = () => {
           <CgProfile className="text-gray-600 text-xl cursor-pointer hover:text-black" />
           <IoSearchSharp className="text-gray-600 text-xl cursor-pointer hover:text-black" />
           <FaRegHeart className="text-gray-600 text-xl cursor-pointer hover:text-black" />
-          <BsCart3 className="text-gray-600 text-xl cursor-pointer hover:text-black" />
+
+          {/* Link Cart Icon To Cart Page */}
+          <Link href="/Cart" className="text-gray-600 hover:text-black">
+            <BsCart3 className="text-gray-600 text-xl cursor-pointer hover:text-black" />
+          </Link>
         </div>
       </div>
 
@@ -70,10 +76,10 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t shadow-md">
           <nav className="flex flex-col space-y-4 p-4">
-            <Link href="/" className="text-gray-600 hover:text-black">
+            <Link href="/Hero" className="text-gray-600 hover:text-black">
               Home
             </Link>
-            <Link href="/shop" className="text-gray-600 hover:text-black">
+            <Link href="/Shop" className="text-gray-600 hover:text-black">
               Shop
             </Link>
             <Link href="/blog" className="text-gray-600 hover:text-black">

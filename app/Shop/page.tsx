@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import { GoTrophy } from "react-icons/go";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
@@ -154,11 +156,13 @@ export default function Shop() {
   ];
 
   return (
-    <div>
+    <div 
+    id="Shop">
       {/* Hero Section */}
       <section
        className="relative w-full h-[400px] bg-cover bg-center"
-       style={{ backgroundImage: `url('/Rectangle 1.png')` }}
+       style={{ backgroundImage: `url('/Rectangle 1.png')`
+        }}
         >
         {/* Text Content */}
        <div className="absolute inset-0 flex flex-col justify-center items-center text-center space-y-4">

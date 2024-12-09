@@ -18,10 +18,10 @@ export default function Footer() {
           <h3 className="mb-4 text-gray-400">Links</h3>
           <ul>
             <li className="mb-2">
-              <a href="#hero">Home</a>
+              <a href="#Hero">Home</a>
             </li>
             <li className="mb-2">
-              <a href="#shop">Shop</a>
+              <a href="#Shop">Shop</a>
             </li>
             <li className="mb-2">
               <a href="#about">About</a>

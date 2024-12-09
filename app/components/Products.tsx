@@ -133,7 +133,7 @@ export default function Product() {
       {/* Show More Button */}
       <div className="text-center mt-8">
   <Link 
-    href="/ProductDetail" 
+    href="/Shop" 
     className="px-6 py-3 font-bold rounded border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white transition"
   >
     Show More

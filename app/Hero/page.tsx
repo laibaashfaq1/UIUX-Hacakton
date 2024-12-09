@@ -1,7 +1,7 @@
-import Browse from "./Browse";
-import Product from "./Products";
-import Rooms from "./Rooms";
-import FurnitureGallery from "./Furniture";
+import Browse from "../components/Browse";
+import Product from "../components/Products";
+import Rooms from "../components/Rooms";
+import FurnitureGallery from "../components/Furniture";
 
 const Hero = () => {
   return (
