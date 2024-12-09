@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link'; // Import Link from next.js
 
 export default function Product() {
@@ -105,7 +106,7 @@ export default function Product() {
             )}
 
             {/* Product Image */}
-            <img
+            <Image
               src={product.image}
               alt={product.name}
               className="w-full h-44 object-contain rounded-md"

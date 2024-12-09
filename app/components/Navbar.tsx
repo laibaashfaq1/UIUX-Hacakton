@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link"; // Import Link
 import { FaRegHeart } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
@@ -27,24 +28,24 @@ const Navbar = () => {
         {/* Navigation Links (hidden on smaller screens) */}
         <nav className="hidden md:flex space-x-8">
           <li className="menulink">
-          <a href="#hero" className="text-gray-600 hover:text-black">
-            Home
-          </a>
+            <Link href="#hero" className="text-gray-600 hover:text-black">
+              Home
+            </Link>
           </li>
           <li className="menulink">
-          <a href="#shop" className="text-gray-600 hover:text-black">
-            Shop
-          </a>
+            <Link href="#shop" className="text-gray-600 hover:text-black">
+              Shop
+            </Link>
           </li>
           <li className="menulink">
-          <a href="/blog" className="text-gray-600 hover:text-black">
-            Blog
-          </a>
+            <Link href="/blog" className="text-gray-600 hover:text-black">
+              Blog
+            </Link>
           </li>
           <li className="menulink">
-          <a href="/contact" className="text-gray-600 hover:text-black">
-            Contact
-          </a>
+            <Link href="/contact" className="text-gray-600 hover:text-black">
+              Contact
+            </Link>
           </li>
         </nav>
 
@@ -69,18 +70,18 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t shadow-md">
           <nav className="flex flex-col space-y-4 p-4">
-            <a href="/" className="text-gray-600 hover:text-black">
+            <Link href="/" className="text-gray-600 hover:text-black">
               Home
-            </a>
-            <a href="/shop" className="text-gray-600 hover:text-black">
+            </Link>
+            <Link href="/shop" className="text-gray-600 hover:text-black">
               Shop
-            </a>
-            <a href="/blog" className="text-gray-600 hover:text-black">
+            </Link>
+            <Link href="/blog" className="text-gray-600 hover:text-black">
               Blog
-            </a>
-            <a href="/contact" className="text-gray-600 hover:text-black">
+            </Link>
+            <Link href="/contact" className="text-gray-600 hover:text-black">
               Contact
-            </a>
+            </Link>
           </nav>
         </div>
       )}

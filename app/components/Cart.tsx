@@ -38,7 +38,7 @@ const Cart = () => {
             {/* Product Image */}
             <div className="flex items-center">
               <div className="bg-pink-100 p-2 rounded-md">
-                <img
+                <Image
                   src="/chair.png"
                   alt="Asgaard sofa"
                   className="h-[100px] w-[100px] object-cover rounded-md"
