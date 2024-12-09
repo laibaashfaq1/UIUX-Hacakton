@@ -1,3 +1,5 @@
+'use client';
+
 import Browse from "../components/Browse";
 import Product from "../components/Products";
 import Rooms from "../components/Rooms";
