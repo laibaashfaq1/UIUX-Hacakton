@@ -6,6 +6,7 @@ import { MdOutlineLocalShipping } from "react-icons/md";
 import { RiCustomerService2Line, RiDeleteBin6Line } from "react-icons/ri";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Cart = () => {
   return (
@@ -83,12 +84,15 @@ const Cart = () => {
               Rs 250,000.00
             </span>
           </div>
+          {/* Checkout Button Link */}
+          <Link href="Checkout">
           <button
             aria-label="Proceed to Checkout"
             className="w-full border-2 border-black rounded-[15px] py-3 font-medium text-[16px] hover:bg-black hover:text-white transition"
           >
             Check Out
           </button>
+          </Link>
         </div>
       </div>
 

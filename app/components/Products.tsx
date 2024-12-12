@@ -106,6 +106,8 @@ export default function Product() {
             )}
 
             {/* Product Image */}
+            {/* Link Card to SingleProduct Detail*/}
+            <Link href="/SingleProduct">
             <Image
               src={product.image}
               alt={product.name}
@@ -113,6 +115,7 @@ export default function Product() {
               height={44}
               width={100}
             />
+            </Link>
 
             {/* Product Name */}
             <h4 className="mt-4 font-semibold text-gray-800 ml-4">{product.name}</h4>

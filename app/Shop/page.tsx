@@ -6,6 +6,7 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { MdOutlineLocalShipping } from "react-icons/md";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 export default function Shop() {
   const products = [
@@ -156,8 +157,7 @@ export default function Shop() {
   ];
 
   return (
-    <div 
-    id="Shop">
+    <div>
       {/* Hero Section */}
       <section
        className="relative w-full h-[400px] bg-cover bg-center"
@@ -211,6 +211,7 @@ export default function Shop() {
 
               {/* Product Image */}
               <div className="relative">
+                <Link href="/SingleProduct">
                 <Image
                   src={product.image}
                   alt={product.name}
@@ -218,6 +219,7 @@ export default function Shop() {
                   height={200}
                   className="w-full h-44 object-contain rounded-md"
                 />
+                </Link>
               </div>
 
               {/* Product Details */}

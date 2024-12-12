@@ -39,12 +39,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="menulink">
-              <Link href="/blog" className="text-gray-600 hover:text-black">
+              <Link href="/Blog" className="text-gray-600 hover:text-black">
                 Blog
               </Link>
             </li>
             <li className="menulink">
-              <Link href="/contact" className="text-gray-600 hover:text-black">
+              <Link href="/Contact" className="text-gray-600 hover:text-black">
                 Contact
               </Link>
             </li>
@@ -82,10 +82,10 @@ const Navbar = () => {
             <Link href="/Shop" className="text-gray-600 hover:text-black">
               Shop
             </Link>
-            <Link href="/blog" className="text-gray-600 hover:text-black">
+            <Link href="/Blog" className="text-gray-600 hover:text-black">
               Blog
             </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-black">
+            <Link href="/Contact" className="text-gray-600 hover:text-black">
               Contact
             </Link>
           </nav>
