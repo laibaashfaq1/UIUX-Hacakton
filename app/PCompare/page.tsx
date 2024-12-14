@@ -149,7 +149,7 @@ export default function PCompare() {
                                 <p>Does Not Cover Wear & Tear</p>
                                 <p>1 Year</p>
                                {/* Addtocart button */}
-                                    <Link href="/AddtoCart">
+                                    <Link href="/Cart">
                                         <button className="bg-yellow-600 text-white px-6 py-2 ml-1 mt-10">
                                             Add to Cart
                                         </button>
@@ -190,7 +190,7 @@ export default function PCompare() {
                                 <p>Does Not Cover Wear & Tear</p>
                                 <p>3 Months</p>
                                 {/* Addtocart Button */}
-                                    <Link href="/AddtoCart">
+                                    <Link href="/Cart">
                                         <button className="bg-yellow-600 text-white px-6 py-2 mt-16">
                                             Add to Cart
                                         </button>

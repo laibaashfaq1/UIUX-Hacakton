@@ -77,7 +77,7 @@ const SingleProduct = () => {
                 />
 
                 {/* Link Button To Add to Cart Page */}
-                <Link href="/AddtoCart">
+                <Link href="/Cart">
                 <button className="bg-pink-200 text-black px-6 py-2 border rounded hover:bg-black hover:text-white">
                   Add to Cart
                 </button>
