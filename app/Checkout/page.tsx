@@ -12,7 +12,7 @@ const Checkout = () => {
     <div>
     {/* Background Image */}
     <Image
-      src="/Checkout.png"
+      src="/checkout.png"
       alt="Checkout background"
       width={1440}
       height={316}
