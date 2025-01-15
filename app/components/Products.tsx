@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link'; // Import Link from next.js
+import Link from 'next/link';
 
 export default function Product() {
   const products = [
@@ -87,7 +87,7 @@ export default function Product() {
       </div>
 
       {/* Products Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
             key={product.id}
@@ -108,13 +108,13 @@ export default function Product() {
             {/* Product Image */}
             {/* Link Card to SingleProduct Detail*/}
             <Link href="/SingleProduct">
-            <Image
-              src={product.image}
-              alt={product.name}
-              className="w-full h-44 object-contain rounded-md"
-              height={44}
-              width={100}
-            />
+              <Image
+                src={product.image}
+                alt={product.name}
+                className="w-full h-44 object-contain rounded-md"
+                height={44}
+                width={100}
+              />
             </Link>
 
             {/* Product Name */}
@@ -135,13 +135,13 @@ export default function Product() {
 
       {/* Show More Button */}
       <div className="text-center mt-8">
-  <Link 
-    href="/Shop" 
-    className="px-6 py-3 font-bold rounded border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white transition"
-  >
-    Show More
-  </Link>
-</div>
+        <Link 
+          href="/Shop" 
+          className="px-6 py-3 font-bold rounded border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white transition"
+        >
+          Show More
+        </Link>
+      </div>
     </section>
   );
 }

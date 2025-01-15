@@ -35,7 +35,7 @@ export default function PCompare() {
                         {/* Product Cards */}
                         <div className="flex flex-wrap gap-4">
                             {/* Product 1 */}
-                            <div className="bg-white p-4 rounded-md shadow-md w-60">
+                            <div className="bg-white p-4 rounded-md shadow-md w-full sm:w-60">
                                 <Link href="/SingleProduct">
                                     <img
                                         src="/Group 160.png"
@@ -49,7 +49,7 @@ export default function PCompare() {
                             </div>
 
                             {/* Product 2 */}
-                            <div className="bg-white p-4 rounded-md shadow-md w-60">
+                            <div className="bg-white p-4 rounded-md shadow-md w-full sm:w-60">
                                 <Link href="/SingleProduct">
                                     <img
                                         src="/Group 157.png"
@@ -64,7 +64,7 @@ export default function PCompare() {
                         </div>
 
                         {/* Add Product Button */}
-                        <div className="mt-4">
+                        <div className="mt-4 w-full sm:w-auto">
                             <p className="font-bold text-xl text-black mb-2">Add A Product</p>
                             <Link href="/Shop">
                                 <button className="bg-yellow-600 text-white font-bold px-6 py-2 rounded-md hover:bg-yellow-700 transition">

@@ -160,28 +160,25 @@ export default function Shop() {
     <div>
       {/* Hero Section */}
       <section
-       className="relative w-full h-[400px] bg-cover bg-center"
-       style={{ backgroundImage: `url('/Rectangle 1.png')`
-        }}
-        >
+        className="relative w-full h-[400px] bg-cover bg-center"
+        style={{ backgroundImage: `url('/Rectangle 1.png')` }}
+      >
         {/* Text Content */}
-       <div className="absolute inset-0 flex flex-col justify-center items-center text-center space-y-4">
-        <h1 className="text-black text-4xl font-bold">Shop</h1>
-           <p className="flex items-center space-x-2 text-gray-600">
-              <span>Home</span>
-                <IoIosArrowForward />
-               <span>Shop</span>
-           </p>
-       </div>
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center space-y-4">
+          <h1 className="text-black text-4xl font-bold">Shop</h1>
+          <p className="flex items-center space-x-2 text-gray-600">
+            <span>Home</span>
+            <IoIosArrowForward />
+            <span>Shop</span>
+          </p>
+        </div>
       </section>
-
 
       {/* Additional Image Section */}
       <section
         className="relative w-full h-[100px] bg-cover bg-center"
         style={{ backgroundImage: `url('/Group 63.png')` }}
-      >
-      </section>
+      ></section>
 
       {/* Product Grid */}
       <section className="p-6 bg-gray-50 mt-10">
@@ -191,7 +188,7 @@ export default function Shop() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <div
               key={product.id}
@@ -212,13 +209,13 @@ export default function Shop() {
               {/* Product Image */}
               <div className="relative">
                 <Link href="/SingleProduct">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={200}
-                  height={200}
-                  className="w-full h-44 object-contain rounded-md"
-                />
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={200}
+                    height={200}
+                    className="w-full h-44 object-contain rounded-md"
+                  />
                 </Link>
               </div>
 
@@ -241,7 +238,6 @@ export default function Shop() {
         </div>
       </section>
 
-      
       {/* Footer */}
       <footer className="bg-pink-100 py-8">
         <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -259,12 +255,18 @@ export default function Shop() {
             <p className="text-gray-600 text-sm">Over 2 years</p>
           </div>
           <div>
-            <MdOutlineLocalShipping size={40} className="mx-auto text-gray-800" />
+            <MdOutlineLocalShipping
+              size={40}
+              className="mx-auto text-gray-800"
+            />
             <h4 className="font-bold text-gray-800">Free Shipping</h4>
             <p className="text-gray-600 text-sm">Orders over $50</p>
           </div>
           <div>
-            <RiCustomerService2Line size={40} className="mx-auto text-gray-800" />
+            <RiCustomerService2Line
+              size={40}
+              className="mx-auto text-gray-800"
+            />
             <h4 className="font-bold text-gray-800">24/7 Support</h4>
             <p className="text-gray-600 text-sm">Dedicated support</p>
           </div>

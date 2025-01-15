@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import Link from "next/link"; // Import Link
+import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
@@ -53,19 +53,17 @@ const Navbar = () => {
 
         {/* Hamburger Menu (visible on smaller screens) */}
         <button
-          className="md:hidden text-gray-600 text-xl"
+          className="md:hidden text-gray-600 text-2xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <IoIosMenu />
         </button>
 
         {/* Icons */}
-        <div className="flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-6">
           <CgProfile className="text-gray-600 text-xl cursor-pointer hover:text-black" />
           <IoSearchSharp className="text-gray-600 text-xl cursor-pointer hover:text-black" />
           <FaRegHeart className="text-gray-600 text-xl cursor-pointer hover:text-black" />
-
-          {/* Link Cart Icon To Cart Page */}
           <Link href="/Cart" className="text-gray-600 hover:text-black">
             <BsCart3 className="text-gray-600 text-xl cursor-pointer hover:text-black" />
           </Link>
@@ -91,6 +89,16 @@ const Navbar = () => {
           </nav>
         </div>
       )}
+
+      {/* Mobile Icons */}
+      <div className="md:hidden flex justify-evenly items-center py-2 border-t">
+        <CgProfile className="text-gray-600 text-xl cursor-pointer hover:text-black" />
+        <IoSearchSharp className="text-gray-600 text-xl cursor-pointer hover:text-black" />
+        <FaRegHeart className="text-gray-600 text-xl cursor-pointer hover:text-black" />
+        <Link href="/Cart" className="text-gray-600 hover:text-black">
+          <BsCart3 className="text-gray-600 text-xl cursor-pointer hover:text-black" />
+        </Link>
+      </div>
     </header>
   );
 };

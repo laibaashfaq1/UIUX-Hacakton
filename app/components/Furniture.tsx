@@ -1,6 +1,10 @@
 import PropTypes from "prop-types";
 
-const FurnitureGallery = ({  }) => {
+interface FurnitureGalleryProps {
+  backgroundImage?: string;
+}
+
+const FurnitureGallery = ({ backgroundImage }: FurnitureGalleryProps) => {
   return (
     <section className="py-16 bg-gray-50">
       {/* Header */}
@@ -18,13 +22,10 @@ const FurnitureGallery = ({  }) => {
         id="furniture"
         className="relative h-96 sm:h-[500px] md:h-[600px] rounded-lg overflow-hidden shadow-lg bg-gray-200 bg-cover bg-center"
         style={{
-            backgroundImage: "url('/furniture.png')", // Ensure valid URL
+          backgroundImage: `url('${backgroundImage}')`, // Use backgroundImage prop
         }}
-        
         aria-label="Furniture Showcase"
-      >
-       
-      </div>
+      ></div>
     </section>
   );
 };

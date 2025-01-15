@@ -27,12 +27,12 @@ const SingleProduct = () => {
               alt="Asgaard Sofa"
               width={600}
               height={400}
-              className="rounded-lg"
+              className="rounded-lg w-full"
             />
-            </div>
+          </div>
 
           {/* Right: Product Details */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 mt-8 lg:mt-0">
             <h1 className="text-2xl font-bold text-gray-900">Asgaard Sofa</h1>
             <p className="text-xl text-gray-700 mt-2">₹24,299.00</p>
             <p className="text-sm text-gray-600 mt-2">
@@ -40,20 +40,20 @@ const SingleProduct = () => {
             </p>
 
             {/* Size Options */}
-          <div className="mt-6">
-            <span className="text-gray-700 font-medium">Size:</span>
-            <div className="flex space-x-4 mt-2">
-              <button className="px-4 py-2 border rounded hover:bg-black hover:text-white">
-                L
-              </button>
-              <button className="px-4 py-2 border rounded hover:bg-black hover:text-white">
-                XL
-              </button>
-              <button className="px-4 py-2 border rounded hover:bg-black hover:text-white">
-                XS
-              </button>
+            <div className="mt-6">
+              <span className="text-gray-700 font-medium">Size:</span>
+              <div className="flex space-x-4 mt-2">
+                <button className="px-4 py-2 border rounded hover:bg-black hover:text-white">
+                  L
+                </button>
+                <button className="px-4 py-2 border rounded hover:bg-black hover:text-white">
+                  XL
+                </button>
+                <button className="px-4 py-2 border rounded hover:bg-black hover:text-white">
+                  XS
+                </button>
+              </div>
             </div>
-          </div>
 
             {/* Color Options */}
             <div className="mt-4">
@@ -64,7 +64,6 @@ const SingleProduct = () => {
                 <div className="w-8 h-8 rounded-full bg-yellow-500 border"></div>
               </div>
             </div>
-
 
             {/* Add to Cart */}
             <div className="mt-6">
@@ -78,41 +77,40 @@ const SingleProduct = () => {
 
                 {/* Link Button To Add to Cart Page */}
                 <Link href="/Cart">
-                <button className="bg-pink-200 text-black px-6 py-2 border rounded hover:bg-black hover:text-white">
-                  Add to Cart
-                </button>
+                  <button className="bg-pink-200 text-black px-6 py-2 border rounded hover:bg-black hover:text-white">
+                    Add to Cart
+                  </button>
                 </Link>
 
                 {/* Link Compare to Compare Page */}
                 <Link href="/PCompare">
-                <button className=" border-black text-black px-6 py-2 border rounded hover:bg-black hover:text-white">
-                  Compare
-                </button>
+                  <button className="border-black text-black px-6 py-2 border rounded hover:bg-black hover:text-white">
+                    Compare
+                  </button>
                 </Link>
-
               </div>
             </div>
 
-             {/* Additional Info */}
-          <div className="mt-6 text-gray-600 space-y-4">
-            <p>
-              <span className="font-medium">SKU:</span> SS001
-            </p>
-            <p>
-              <span className="font-medium">Category:</span> Sofas
-            </p>
-            <p>
-              <span className="font-medium">Tags:</span> Sofa, Chair, Home, Shop
-            </p>
-          </div>
+            {/* Additional Info */}
+            <div className="mt-6 text-gray-600 space-y-4">
+              <p>
+                <span className="font-medium">SKU:</span> SS001
+              </p>
+              <p>
+                <span className="font-medium">Category:</span> Sofas
+              </p>
+              <p>
+                <span className="font-medium">Tags:</span> Sofa, Chair, Home, Shop
+              </p>
+            </div>
 
-          {/* Share  Icon */}
-          <div className="flex items-center space-x-4 mt-6">
-            <span className="font-medium text-gray-700">Share:</span>
-            <FaFacebook size={24} className="cursor-pointer" />
-            <AiFillTwitterCircle size={28} className="cursor-pointer" />
-            <FaLinkedin size={26} className="cursor-pointer" />
-          </div>
+            {/* Share Icon */}
+            <div className="flex items-center space-x-4 mt-6">
+              <span className="font-medium text-gray-700">Share:</span>
+              <FaFacebook size={24} className="cursor-pointer" />
+              <AiFillTwitterCircle size={28} className="cursor-pointer" />
+              <FaLinkedin size={26} className="cursor-pointer" />
+            </div>
           </div>
         </div>
 
@@ -127,30 +125,32 @@ const SingleProduct = () => {
           </div>
           <div className="mt-4">
             <p className="text-gray-700">
-            Embodying the raw, wayward spirit of rock and roll, the Kilburn portable active stereo speaker takes the 
-            unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+              Embodying the raw, wayward spirit of rock and roll, the Kilburn portable active stereo speaker takes the 
+              unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
             </p><br></br>
             <p className="text-gray-700">
-            Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. 
-            Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted 
-            hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is 
-            both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal 
-            preferences while the guitar-influenced leather strap enables easy and stylish travel.
+              Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. 
+              Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted 
+              hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is 
+              both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal 
+              preferences while the guitar-influenced leather strap enables easy and stylish travel.
             </p><br></br>
           </div>
           {/* Image */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Image
-            src="/Group 107.png"
-            alt="sofa"
-            width={500}
-            height={300}
+              src="/Group 107.png"
+              alt="sofa"
+              width={500}
+              height={300}
+              className="w-full"
             />
             <Image
-            src="/Group 106.png"
-            alt="sofa"
-            width={500}
-            height={300}
+              src="/Group 106.png"
+              alt="sofa"
+              width={500}
+              height={300}
+              className="w-full"
             />
           </div>
         </div>
@@ -158,11 +158,10 @@ const SingleProduct = () => {
         {/* Related Products */}
         <div className="mt-12">
           <h2 className="text-xl font-bold mb-6">Related Products</h2>
-          <Product/>
+          <Product />
         </div>
       </div>
     </div>
-    
   );
 };
 

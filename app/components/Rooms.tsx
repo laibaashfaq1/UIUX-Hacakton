@@ -7,20 +7,20 @@ const Rooms = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
         {/* Left Text Section */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
             50+ Beautiful rooms inspiration
           </h2>
           <p className="text-gray-600 mt-4">
             Our designer already made a lot of beautiful prototypes of rooms
             that inspire you.
           </p>
-          <button className="mt-6 px-6 py-2 text-white bg-yellow-500 hover:bg-yellow-600 rounded-lg shadow-lg">
+          <button className="mt-6 px-4 md:px-6 py-2 text-white bg-yellow-500 hover:bg-yellow-600 rounded-lg shadow-lg">
             Explore More
           </button>
         </div>
 
         {/* Right Image Section */}
-        <div className="w-full md:w-1/2 flex space-x-4">
+        <div className="w-full md:w-1/2 flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
           {/* Image 1 */}
           <div className="relative flex-1">
             <Image

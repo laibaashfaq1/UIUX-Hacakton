@@ -4,30 +4,30 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 text-black py-10">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
-        {/* Exclusive - Address Section */}
+        {/* Address Section */}
         <div>
           <h3 className="text-lg font-bold mb-4">Furniro</h3>
-          <p className="mb-2 text-gray-600">
-            400 University Drive Suite 200 Coral Gables,
-          </p>
-          <p className="mb-2 text-gray-600">FL 33134 USA</p>
+          <address className="text-gray-600 not-italic">
+            400 University Drive Suite 200<br />
+            Coral Gables, FL 33134 USA
+          </address>
         </div>
 
         {/* Links Section */}
         <div>
           <h3 className="mb-4 text-gray-400">Links</h3>
-          <ul>
-            <li className="mb-2">
-              <a href="#Hero">Home</a>
+          <ul className="space-y-2">
+            <li>
+              <a href="#Hero" className="text-gray-600 hover:text-black">Home</a>
             </li>
-            <li className="mb-2">
-              <a href="#Shop">Shop</a>
+            <li>
+              <a href="#Shop" className="text-gray-600 hover:text-black">Shop</a>
             </li>
-            <li className="mb-2">
-              <a href="#about">About</a>
+            <li>
+              <a href="#about" className="text-gray-600 hover:text-black">About</a>
             </li>
-            <li className="mb-2">
-              <a href="#contact">Contact</a>
+            <li>
+              <a href="#contact" className="text-gray-600 hover:text-black">Contact</a>
             </li>
           </ul>
         </div>
@@ -35,15 +35,15 @@ export default function Footer() {
         {/* Help Section */}
         <div>
           <h3 className="mb-4 text-gray-400">Help</h3>
-          <ul>
-            <li className="mb-2">
-              <a href="#">Payment Options</a>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="text-gray-600 hover:text-black">Payment Options</a>
             </li>
-            <li className="mb-2">
-              <a href="#">Returns</a>
+            <li>
+              <a href="#" className="text-gray-600 hover:text-black">Returns</a>
             </li>
-            <li className="mb-2">
-              <a href="#">Privacy Policies</a>
+            <li>
+              <a href="#" className="text-gray-600 hover:text-black">Privacy Policies</a>
             </li>
           </ul>
         </div>
@@ -68,8 +68,8 @@ export default function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center border-t border-gray-700 mt-10 pt-4 text-sm text-gray-500">
-        © 2023 Furniro. All rights reserved
+      <div className="text-center border-t border-gray-300 mt-10 pt-4 text-sm text-gray-500">
+        &copy; 2023 Furniro. All rights reserved.
       </div>
     </footer>
   );
