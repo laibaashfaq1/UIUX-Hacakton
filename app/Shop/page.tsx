@@ -159,14 +159,20 @@ export default function Shop() {
   return (
     <div>
       {/* Hero Section */}
-      <section
-        className="relative w-full h-[400px] bg-cover bg-center"
-        style={{ backgroundImage: `url('/Rectangle 1.png')` }}
-      >
-        {/* Text Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center space-y-4">
+      <section className="relative">
+        <Image
+          src="/Rectangle 1.png"
+          alt="Checkout background"
+          width={1440}
+          height={316}
+          priority
+          className="w-full object-cover"
+        />
+
+        {/* Text Content Over Image */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <h1 className="text-black text-4xl font-bold">Shop</h1>
-          <p className="flex items-center space-x-2 text-gray-600">
+          <p className="flex items-center text-gray-600">
             <span>Home</span>
             <IoIosArrowForward />
             <span>Shop</span>
@@ -175,10 +181,14 @@ export default function Shop() {
       </section>
 
       {/* Additional Image Section */}
-      <section
-        className="relative w-full h-[100px] bg-cover bg-center"
-        style={{ backgroundImage: `url('/Group 63.png')` }}
-      ></section>
+      <Image
+        src="/Group 63.png"
+        alt="Checkout background"
+        width={1440}
+        height={316}
+        priority
+        className="w-full object-cover"
+      />
 
       {/* Product Grid */}
       <section className="p-6 bg-gray-50 mt-10">
