@@ -4,23 +4,20 @@ import Browse from "../components/Browse";
 import Product from "../components/Products";
 import Rooms from "../components/Rooms";
 import FurnitureGallery from "../components/Furniture";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <div>
-    <div
-      id="hero"
-      className="relative min-h-screen bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: "url('/heroimg.jpg')", // Ensure the path to the image is correct
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+      <Image
+              src="/heroimg.jpg"
+              alt="Checkout background"
+              width={1440}
+              height={316}
+              priority
+              className="w-full object-cover"/>
 
       {/* Other Components */}
-      
-    </div>
     <Browse />
     <Product />
     <Rooms />
